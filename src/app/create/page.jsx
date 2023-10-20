@@ -7,7 +7,6 @@ export default function Create() {
   const [error, setError] = useState('')
 
   async function handleSubmit(formData) {
-    console.log(process.env)
     const result = await createBook(formData)
 
     if (result?.error) {
